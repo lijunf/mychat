@@ -1,0 +1,66 @@
+/**
+ *	样式约定规则: 必须以ct_开头; ct是chart缩写
+ *	author: lucien
+ */
+.ct_account_area {
+	width: 800px;
+	top : 10px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.ct_account_area fieldset {
+	padding: 10px;
+	border-radius: 5px; 
+	box-shadow:1px 1px 10px #CCCCCC;
+}
+
+.ct_account_area fieldset legend {
+	padding: 5px;
+	font-size: 14px;
+}
+
+.ct_message {
+	color: red;
+    font-size: 12px;
+    margin: 10px auto 20px 20px;
+    text-align: center;
+    width: 380px;
+}
+
+.ct_account_area ul {
+	list-style: none;
+}
+
+.ct_account_area ul li {
+	padding: 10px;
+}
+
+.ct_account_area ul li label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right: 5px;	
+	font-size: 13px;
+}
+
+.ct_account_area ul li input {
+	border: 1px solid #666666;
+	border-radius: 3px; 
+}
+
+.ct_account_area ul li input[type='radio'] {
+	border: 0;
+}
+
+.ct_account_area ul li span {
+	font-size: 12px;
+	display: inline-block;
+	width: 220px;
+	margin-left: 5px;
+	color: red;
+}
+
+.ct_account_area .ct_account_btns {
+	margin: 20px auto 20px auto;
+}

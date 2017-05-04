@@ -1,0 +1,208 @@
+/**
+ *	样式约定规则: 必须以ct_开头; ct是chart缩写
+ *	author: lucien
+ */
+.ct_reg_area {
+	width: 800px;
+	position: relative;
+	margin: 20px auto;
+}
+
+.ct_reg_area fieldset {
+	padding: 10px;
+	border-radius: 5px; 
+	box-shadow:1px 1px 10px #CCCCCC;
+	background-image: -webkit-linear-gradient(top, #FAFAFA, #CAE1FF);
+	background-image: -moz-linear-gradient(center top , #FAFAFA, #CAE1FF);
+	border: 1px solid #cccccc;
+}
+
+.ct_reg_area fieldset legend {
+	padding: 5px;
+	font-size: 14px;
+}
+
+.ct_message {
+	margin-top:10px;
+	width: 260px;
+	text-align: center;
+	font-size: 12px;
+	color: red;
+}
+
+.ct_reg_area ul {
+	list-style: none;
+}
+
+.ct_reg_area ul li {
+	padding: 10px;
+	font-size: 13px;
+}
+
+.ct_reg_area ul li label {
+	display: inline-block;
+	width: 120px;
+	text-align: right;
+	margin-right: 5px;	
+	font-size: 13px;
+	vertical-align: top;
+	
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.ct_reg_area #ct_headers {
+	display: inline-block;
+	width: 470px;
+	overflow: hidden;
+}
+
+.ct_reg_area .ct_headers {
+	height: 42px;
+}
+
+.ct_reg_area .ct_header {
+	width: 38px;
+	height: 38px;
+	cursor: pointer;
+	border: 2px solid #cccccc;
+}
+
+.ct_reg_area #ct_header_btn {
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: top;
+	width: 0;
+	height: 0;
+	border-width: .5em;
+	border-style: solid;
+}
+
+.ct_reg_area .ct_header_btn1 {
+	border-color: rgb(102, 102, 102) transparent transparent transparent;
+}
+
+.ct_reg_area .ct_header_btn {
+	margin-top: -0.5em;
+	border-color: transparent transparent rgb(102, 102, 102) transparent;
+}
+
+.ct_reg_area ul li input[type='text'],
+	.ct_reg_area ul li input[type='password'],
+	.ct_reg_area ul li input[type='email'] {
+	border: 1px solid #666666;
+	border-radius: 3px; 
+	width: 200px;
+	
+	background-color: #fff;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+	-moz-transition: border linear .2s,box-shadow linear .2s;
+	-o-transition: border linear .2s,box-shadow linear .2s;
+	transition: border linear .2s,box-shadow linear .2s;
+	
+	display: inline-block;
+	height: 20px;
+	padding: 4px 6px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #555;
+	vertical-align: middle;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.ct_reg_area ul li textarea {
+	border: 1px solid #666666;
+	border-radius: 3px; 
+	
+	background-color: #fff;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+	-moz-transition: border linear .2s,box-shadow linear .2s;
+	-o-transition: border linear .2s,box-shadow linear .2s;
+	transition: border linear .2s,box-shadow linear .2s;
+	
+	display: inline-block;
+	padding: 4px 6px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #555;
+	vertical-align: middle;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.ct_reg_area ul li input[type='radio'], .ct_reg_area ul li input[type='checkbox'] {
+	border: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.ct_reg_area .ct_radio_list {
+	display: inline-block;
+	height: 20px;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+.ct_reg_area .ct_checkbox_list {
+	display: inline-block;
+	height: 20px;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+.ct_reg_area .ct_checkbox_list span {
+	vertical-align: top;
+	font-size: 13px;
+	color: black;
+}
+
+.ct_reg_area ul li span {
+	font-size: 12px;
+	display: inline-block;
+	width: 320px;
+	margin-left: 5px;
+	color: red;
+}
+
+.ct_reg_area .ct_reg_btns {
+	margin: 20px auto 20px auto;
+}
+
+.ct_reg_area ul li .ct_mes_user{
+	color: #666666;
+	font-size: 11px;
+	
+	font-weight: normal;
+	line-height: 30px;
+}
+
+.ct_reg_area .ct_hide_bottom {
+	height: 3px;
+	border-top: 1px solid #ccc;
+	cursor: pointer;
+	margin: 10px auto;
+	width: 650px;
+}
+
+.ct_reg_area .ct_sub_content {
+	display: none;
+}
+
+#passwordStrengthDiv {
+	position: absolute;
+	left: 155px;
+	margin-top: 5px;
+}

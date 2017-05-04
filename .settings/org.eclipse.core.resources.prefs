@@ -1,0 +1,13 @@
+#Tue Aug 05 23:41:46 CST 2014
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/pages/base/login.jsp=UTF-8
+encoding//WebContent/style/base/css/lucien.account.css=UTF-8
+encoding//WebContent/style/base/css/lucien.common.css=UTF-8
+encoding//WebContent/style/base/css/lucien.login.css=UTF-8
+encoding//WebContent/style/base/css/lucien.reg.css=UTF-8
+encoding//WebContent/style/base/css/lucien.room.css=UTF-8
+encoding//WebContent/style/base/css/lucien.room1.css=UTF-8
+encoding//WebContent/style/base/css/lucien.room2.css=UTF-8
+encoding//src/com/lucien/cache/UserCache.java=UTF-8
+encoding//src/com/lucien/filter/SetCharacterEncoding.java=UTF-8
+encoding/<project>=UTF-8

@@ -1,0 +1,65 @@
+/**
+ *	样式约定规则: 必须以ct_开头; ct是chart缩写
+ *	author: lucien
+ */
+
+.ct_room .ct_left .ct_fieldset .ct_legend {
+	padding: 5px;
+	font-size: 12px;
+	position: relative;
+	height: 54px;
+}
+
+.ct_fieldset .ct_legend .ct_user_header {
+	display: inline-block;
+	height: 54px;
+	cursor: pointer;
+}
+
+.ct_fieldset .ct_legend .ct_user_info {
+	display: inline-block;
+	height: 54px;
+	vertical-align: top;
+	margin-left: 5px;
+	width: 123px;
+	padding: 3px;
+}
+.ct_fieldset .ct_legend .ct_user_exit {
+	display: inline-block;
+	height: 24px;
+	vertical-align: top;
+}
+
+.ct_fieldset .ct_legend .ct_user_info span {
+	display: block;
+	overflow: hidden;
+	height: 26px;
+}
+
+.ct_fieldset .ct_user_info .ct_username strong {
+	font-size: 16px;
+}
+
+.ct_addfri_info {
+	list-style: none;
+	padding-left: 10px;
+}
+
+.ct_addfri_info li {
+	padding: 5px;
+	display: block;
+}
+
+#ct_group {
+	display: inline-block;
+}
+
+#new_group {
+	cursor: pointer;
+	color: blue;
+}
+
+#filterInput, #filterRadio {
+	position: relative;
+	display: inline;
+}

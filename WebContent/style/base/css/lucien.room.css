@@ -1,0 +1,211 @@
+/**
+ *	样式约定规则: 必须以ct_开头; ct是chart缩写
+ *	author: lucien
+ */
+body {
+	font: 12px/22px 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+}
+.ct_room {
+	margin: 0 auto;
+	width: 950px;
+	height: 550px;
+	padding: 0;
+}
+
+.ct_room .ct_left {
+	width: 230px;
+	float: left;
+	height: 100%;
+	border-radius: 5px; 
+	box-shadow:1px 1px 10px #CCCCCC;
+	border: 1px solid #cccccc;
+	padding: 15px;
+	background-image: -webkit-linear-gradient(top, #FAFAFA, #CAE1FF);
+	background-image: -moz-linear-gradient(center top , #FAFAFA, #CAE1FF);
+}
+
+.ct_room .ct_right {
+	width: 655px;
+	float: right;
+	margin: 0;
+	height: 100%;
+	border-radius: 5px; 
+	box-shadow:1px 1px 10px #CCCCCC;
+	border: 1px solid #cccccc;
+	padding: 15px;
+	background-image: -webkit-linear-gradient(top, #FAFAFA, #CAE1FF);
+	background-image: -moz-linear-gradient(center top , #FAFAFA, #CAE1FF);
+}
+
+.ct_room .ct_left .ct_fieldset {
+	height: 100%;
+}
+
+.ct_room .ct_left .ct_fieldset .ct_legend {
+	padding: 15px;
+	font-size: 12px;
+}
+
+.ct_room .ct_left .ct_fieldset .ct_user_search {
+	 padding: 1px 15px;
+}
+
+.ct_user_search input[type='text'] {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 220px;
+	height: 23px;
+	position: relative;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+	-moz-transition: border linear .2s,box-shadow linear .2s;
+	-o-transition: border linear .2s,box-shadow linear .2s;
+	transition: border linear .2s,box-shadow linear .2s;
+}
+
+.ct_user_search select {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	height: 23px;
+	position: relative;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+	-moz-transition: border linear .2s,box-shadow linear .2s;
+	-o-transition: border linear .2s,box-shadow linear .2s;
+	transition: border linear .2s,box-shadow linear .2s;
+}
+
+.ct_user_search input[type='button'] {
+	cursor: pointer;
+	background: url("../images/search.gif");
+	border: 0;
+	width: 16px;
+	height: 16px;
+	margin-left: -25px;
+    position: relative;
+    top: 3px;
+    line-height: 23px;
+}
+
+.ct_room .ct_right .ct_content {
+	width: 100%;
+	position: relative;
+}
+
+.ct_room .ct_right .ct_content .ct_rnav {
+	list-style: none;
+}
+
+.ct_room .ct_right .ct_content .ct_rnav li {
+	padding: 3px;
+}
+
+.ct_users {
+	padding: 10px;
+	height: 485px;
+}
+
+.ct_users span {
+	display: block;
+	padding: 3px;
+}
+	
+#ct_friendlist {
+	list-style: none;
+	height: 425px;
+	overflow: auto;
+}
+
+#ct_friendlist li {
+	padding: 3px;
+	cursor: pointer;
+}
+
+.ct_friend {
+	color: red;
+}
+
+.ct_user_number {
+	font-size: 16px;
+}
+
+.ct_user_number font {
+	color: red;
+}
+
+.ct_user_result {
+		
+}
+
+.ct_room .ct_rpaging {
+	border: 1px solid #f5f4f4;
+	height: 20px;
+	text-align: right;
+	padding-right: 40px; 
+}
+
+.ct_room .ct_rpaging span {
+	cursor: pointer;
+}
+
+.ct_room .ct_rcontainer {
+	border: 1px solid #f5f4f4;
+	height: 440px;
+	margin-top: 1px;
+	padding: 1px;
+}
+
+.ct_room .ct_rcontainer .ct_userinfo {
+	width: 213px;
+	height: 70px;
+	padding: 2px;
+	float: left;
+}
+
+.ct_room .ct_rcontainer .ct_userinfo img {
+	float: left;
+	margin: 6px;
+	width: 54px;
+	height: 54px;
+}
+
+.ct_room .ct_rcontainer .ct_userinfo ul {
+	float: left;
+	list-style: none;
+}
+
+.ct_room .ct_rcontainer .ct_userinfo ul li {
+	display: block;
+}
+
+.ct_room .ct_rcontainer .ct_userinfo ul li span {
+	cursor: pointer;
+	color: blue;	
+}
+
+.ct_room .ct_rfooter {
+	border: 1px solid #f5f4f4;
+	height: 54px;
+	margin-top: 1px;
+}
+
+.ct_room .ct_rfooter span img {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 2px;
+	cursor: pointer;
+}
+
+#ct_tip {
+	position: relative;
+	margin: 0 auto;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+}

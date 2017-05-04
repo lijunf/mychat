@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>登录页面</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="http://cdn.bootcss.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    	#ct_headers {
+			display: inline-block;
+			width: 470px;
+			overflow: hidden;
+		}
+		
+		.ct_headers {
+			height: 42px;
+		}
+		
+		.ct_header {
+			width: 38px;
+			height: 38px;
+			cursor: pointer;
+			border: 2px solid #cccccc;
+		}
+		
+		#ct_header_btn {
+			display: none;
+			cursor: pointer;
+			width: 16px;
+			height: 16px;
+			vertical-align: top;
+		}
+		
+		.ct_header_btn {
+			background: red;
+		}
+    </style>
+    <script>
+	    /**
+	     * 选择头像
+	     * @param img点击的图片对象
+	     */
+	    function choiceHeader(img) {
+	    	$("img.ct_header").css("border-color", "#cccccc");
+	    	$(img).css("border-color", "red");
+	    	$("#ct_header").val(img.title);
+	    }
+	
+	    $(document).ready(function() {
+	    	$('span#ct_header_btn').click(function() {
+	    		$("div#ct_headers").toggleClass("ct_headers");
+	    		$('span#ct_header_btn').toggleClass("ct_header_btn");
+	    	});
+	    	$('div.ct_hide_bottom').click(function() {
+	    		$('ul#ct_sub_content').toggleClass("ct_sub_content");
+	    	});
+	    });
+    </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span6">
+				<h3 class="text-center">
+					已有账号，请登录
+				</h3>
+				<form class="form-horizontal">
+					<div class="control-group">
+						 <label class="control-label" for="username">账号</label>
+						<div class="controls">
+							<input id="username" name="username" type="text" />
+						</div>
+					</div>
+					<div class="control-group">
+						 <label class="control-label" for="password">密码</label>
+						<div class="controls">
+							<input id="password" name="password" type="password" />
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							 <label class="checkbox"><input type="checkbox" /> Remember me</label> 
+							 <button type="submit" class="btn">登陆</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="span6">
+				<form>
+					<fieldset>
+						<legend>快速注册</legend> 
+						<label>*昵称</label>
+						<input type="text" name="nickname" placeholder="请输入昵称..."/> 
+						<label>*密码</label>
+						<input type="password" name="password"/> 
+						<label>*确认密码</label>
+						<input type="password" name="password2"/> 
+						<label>*邮箱</label>
+						<input type="text" name="email"/> 
+						<label>*选择头像</label>
+						<input id="ct_header" type="hidden" name="header"/>
+						<div id="ct_headers" class="ct_headers">
+							<img class="ct_header" onclick="choiceHeader(this)" title="0.png" src="style/base/images/header/online/0.png">
+							<img class="ct_header" onclick="choiceHeader(this)" title="1.png" src="style/base/images/header/online/1.png">
+							<img class="ct_header" onclick="choiceHeader(this)" title="2.png" src="style/base/images/header/online/2.png">
+							<img class="ct_header" onclick="choiceHeader(this)" title="3.png" src="style/base/images/header/online/3.png">
+							<img class="ct_header" onclick="choiceHeader(this)" title="4.png" src="style/base/images/header/online/4.png">
+							<img class="ct_header" onclick="choiceHeader(this)" title="5.png" src="style/base/images/header/online/5.png">
+							<img class="ct_header" onclick="choiceHeader(this)" title="6.png" src="style/base/images/header/online/6.png">
+							<img class="ct_header" onclick="choiceHeader(this)" title="7.png" src="style/base/images/header/online/7.png">
+							<img class="ct_header" onclick="choiceHeader(this)" title="8.png" src="style/base/images/header/online/8.png">
+							<img class="ct_header" onclick="choiceHeader(this)" title="9.png" src="style/base/images/header/online/9.png">
+						</div>
+						<span id="ct_header_btn">&darr;</span>
+						<span class="help-block">这里填写帮助信息.</span> 
+						<label class="checkbox"><input type="checkbox" /> 同意条款</label> 
+						<button class="btn" type="submit">提交</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

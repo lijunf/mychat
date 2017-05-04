@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+
+	<tag>
+		<name>historyMes</name>
+		<tag-class>com.lucien.tags.HistoryMes</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+
+</taglib>

@@ -1,0 +1,131 @@
+/**
+ *	样式约定规则: 必须以ct_开头; ct是chart缩写
+ *	author: lucien
+ */
+body,div,address,blockquote,iframe,ul,ol,dl,dt,dd,li,dl,h1,h2,h3,h4,pre,p,table,caption,th,td,form,legend,fieldset,input,button,select,textarea
+{
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+}
+
+#ct_dialog {
+	position: relative;
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	visibility: hidden;
+}
+
+.draggable {
+}
+
+.ct_width30 {
+	display: inline-block;
+	width: 30px;
+}
+
+.ct_width20 {
+	display: inline-block;
+	width: 20px;
+}
+
+.ct_width15 {
+	display: inline-block;
+	width: 15px;
+}
+
+.ct_width5 {
+	display: inline-block;
+	width: 5px;
+}
+
+.ct_font12 {
+	font-size: 12px;
+}
+
+.ct_font13 {
+	font-size: 13px;
+}
+
+.ct_font14 {
+	font-size: 14px;
+}
+
+.ct_font16 {
+	font-size: 16px;
+}
+
+.ct_red {
+	color: red;
+}
+
+.ct_button:before {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.15em 0 0 0.15em;
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 2px 0 0 rgba(255, 255, 255, 0.5);
+    float: left;
+    font-size: 1.5em;
+    margin: 0 1em 0 -1em;
+    padding: 0 0.2em;
+    pointer-events: none;
+    text-align: center;
+    width: 1em;
+}
+
+.ct_button {
+    background-color: #DDDDDD;
+    background-image: -moz-linear-gradient(center top , #EEEEEE, #CCCCCC);
+    background-image: -webkit-linear-gradient(top, #EEEEEE, #CCCCCC);
+    border: 1px solid #777777;
+    border-radius: 4px;
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.3);
+    color: #333333;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 0.5em;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    white-space: nowrap;
+    cursor: pointer;
+    
+    padding: 4px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 20px;
+	
+}
+
+.ct_button:hover {
+    background-color: #EEEEEE;
+    background-image: -moz-linear-gradient(center top , #FAFAFA, #DDDDDD);
+    background-image: -webkit-linear-gradient(top, #FAFAFA, #DDDDDD);
+}
+
+.ct_v_top {
+	vertical-align: top;
+}
+
+/* WebRTC START */
+.videoContainer {
+   	width: 300px; height: auto; position: absolute; top: 10px; 
+	border: 1px solid #ddd; border-radius: 4px; padding: 5px; background-color: #fff;	
+	box-shadow: 1px 1px 10px #CCCCCC;
+	resize: both; overflow: auto; cursor: nwse-resize;
+}
+.videoContainer .close {
+	content: url(../images/close.gif);
+	position: fixed; width: 14px; height: 14px;
+	border: 1px solid #ddd; border-radius: 7px;
+	margin-left: -7px; margin-top: -10px;
+	cursor: pointer; background: white; z-index: 1;
+}
+.videoRemote {float: left; left: 10px;}
+.videoLocal {float: right; right: 10px;}
+.videoContainer > video {width: 100%; height: 100%;  position: relative; cursor: move; }
+/* WebRTC END */

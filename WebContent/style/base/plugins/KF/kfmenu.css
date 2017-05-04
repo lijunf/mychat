@@ -1,0 +1,237 @@
+DIV { 
+	TEXT-ALIGN: left; 
+	PADDING-BOTTOM: 0px; 
+	BORDER-RIGHT-WIDTH: 0px; 
+	MARGIN: 0px; 
+	PADDING-LEFT: 0px; 
+	OUTLINE-WIDTH: 0px; 
+	PADDING-RIGHT: 0px; 
+	BORDER-TOP-WIDTH: 0px; 
+	BORDER-BOTTOM-WIDTH: 0px; 
+	VERTICAL-ALIGN: middle; 
+	BORDER-LEFT-WIDTH: 0px; 
+	PADDING-TOP: 0px; 
+}
+
+.ct_kfbox div {
+	COLOR: #666; 
+	FONT-SIZE: 12px; 
+	line-height: 18px; 
+}
+
+.ct_kfbox A { 
+	TEXT-DECORATION: none;
+	color: #666666;
+}
+
+A.ct_red {
+	COLOR: red;
+	font-weight: bold;
+}
+
+.ct_kfbox LI { 
+	LINE-HEIGHT: 1.5em; 
+	COLOR: #666; 
+	FONT-SIZE: 12px;
+}
+
+.ct_kfbox UL,.ct_kfbox LI,.ct_kfbox IMG { TEXT-ALIGN: left; PADDING-BOTTOM: 0px; BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; PADDING-LEFT: 0px; OUTLINE-WIDTH: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 0px }
+
+.ct_kfbox{
+	position:absolute;
+	background:#fff;
+	top:186px;
+	width:25px;
+	overflow:hidden;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	z-index:50;
+	left:0px;
+	text-align:center;
+	}
+.ct_kfmain{
+	clear:both;
+	background:#fff;
+	white-space:normal;
+	overflow:hidden;
+	width:auto;
+	margin:0px;
+	padding:0px;	
+}
+.ct_kfbox img{
+	margin:0;
+	padding:0;
+	float:left;
+}
+.ct_kfbox .ct_kffoot img
+{
+	float:right;
+}
+.QQonline img,.QQoffline img{
+	display:inline;
+	float:none;
+}
+.ct_kfhead{
+	background:url(./images/qq_03.gif) no-repeat right;
+	overflow:hidden;
+	height:40px;
+	clear:both;
+	margin:0px;
+	padding:0px;
+}
+.ct_kffoot{
+	background:url(./images/index_bot2_foot.gif) bottom repeat-x;
+	background-position:10px 0;
+	height:9px;
+	clear:both;
+	margin:0px;
+	padding:0px;
+}
+*html .ct_kfmenu,.ct_kfhead,.ct_kffoot
+{
+	
+	/*margin-right:-3px !important;
+	margin-left:-3px !important;*/
+	margin-right:0px;
+	margin-left:0px;
+}
+.ct_kfmenu {
+	background:url(./images/index_bot2_02.gif) right repeat-y;
+	margin:0px;
+	height:460px;/*这儿是ff需要确定值，设置overflow:auto有问题*/
+	overflow:hidden;
+	padding:0;
+	float:right;
+	padding-bottom: 1000px !important;
+	margin-bottom: -1000px !important; 
+	cursor:pointer;
+}
+.ct_kfcontent{
+	margin:0;
+	padding:0;
+	width:120px;
+	display:none;
+	float:left;
+	padding-bottom: 1000px !important;
+	margin-bottom: -1000px !important;
+	text-align:center;
+}
+
+
+*html .ct_kfmenu {
+	margin-left:-3px;!important;
+}
+*html .ct_kfcontent{
+	width:118px;!important;
+}
+.ct_kfitemtitle{
+		background: url(./images/bg_cm.jpg) bottom no-repeat;
+		cursor:pointer;
+		width:100%;
+		height:20px;
+		overflow:hidden;
+		line-height:20px;
+		margin:0;
+		padding:0;
+		padding-left:10px;
+}
+.ct_kfbox ul{
+	display:block;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	}
+.ct_kfbox .QQonline{
+		background-position:4px;
+		height:25px;
+		line-height:25px;
+		width:100%;
+		margin:0 auto;
+			
+}
+.QQonline img,.QQoffline img{
+	margin:0;
+	padding:0;
+	border:0;
+}
+.ct_kfbox .QQoffline{
+		background-position:4px;
+		height:25px;
+		line-height:25px;
+		width:100%;
+		margin:0 auto;
+			
+}
+.ct_kfitem {
+	padding: 4px;
+}
+.ct_kfbox .ct_kfitem ul li a,.ct_kfbox .ct_kf53button a{
+	position:relative;
+	z-index:1;
+	}
+.ct_kfbox span.title,.ct_kfbox span.titletel,.ct_kfbox .ct_kf53button span.title{
+	display: none;
+	cursor:pointer;
+	padding:0;
+	margin:0;
+}
+.ct_kfbox .ct_kfitem ul li a:hover,.ct_kfbox .ct_kf53button a:hover{
+	background:url(./images/QQline.jpg) bottom no-repeat;
+	z-index:2;/*这个为了ie6和ie7*/
+	padding:0px 0px 5px 0px;
+	margin:0;
+}
+.ct_kfbox .ct_kfitem ul li a:hover span.title,.ct_kfbox .ct_kfitem ul li a:hover span.titletel,.ct_kfbox .ct_kf53button a:hover span.title{ /*span 标签仅在 :hover 状态时显示*/
+	display:block;
+	position:absolute;
+	z-index:3;
+	top:21px;
+	left:-5px;
+	width:110px;
+	border:1px solid black;
+	background-color:#FFC;
+	color:#333;
+	padding:0;
+	margin:0;
+	line-height:15px;
+}
+.ct_kfbox .ct_kfitem ul li a:hover span.titletel{
+	left:-80px;
+	width:130px
+}
+.ct_kfbox .ct_kf53button a:hover span.title{
+	left:-140px;
+	top:-30px;
+	width:130px;
+	}
+.ct_kfbox .ct_kfhead img{
+	position:absolute;
+	border:0;
+	cursor:pointer;
+	margin:0;
+	padding:0;
+}
+.ct_kfbox .ct_kfhead img.ct_log{
+	top:10px;
+	right:35px;
+}
+.ct_kfbox .ct_kfhead img.ct_xiao{
+	top:5px;
+	right:25px;
+
+}
+.ct_kfbox .ct_kfhead img.ct_close{
+	top:8px;
+	right:11px;
+
+}
+.ct_kf53button{
+	float:left;
+	margin:0;
+	padding:0;
+	margin-top:-10px;
+	margin-left:4px;
+}
+*html .ct_kf53button{
+	margin-left:1px;!important;
+}
