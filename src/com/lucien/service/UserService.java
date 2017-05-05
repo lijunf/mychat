@@ -58,6 +58,7 @@ public class UserService extends BaseService {
 					} catch (Exception e) {}
 				}
 				user.setSession(session);
+				user.online();
 				env.addLoginusr(user);
 				response.sendRedirect("action-room.html");
 				/*boolean result = env.addLoginusr(user);

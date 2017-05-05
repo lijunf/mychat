@@ -49,6 +49,7 @@ public class WebAction extends HttpServlet {
 	 */
 	public void handle(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		response.setHeader("Access-Control-Allow-Origin", "*");
 		String method = request.getParameter(Constants.METHOD);		// 主方法，对应com.lucien.service.[method]Service类
 		String act = request.getParameter(Constants.ACT);			// 对应service里面的方法，若为空service取Configure.defaultservice
 		BaseService service = null;

@@ -409,7 +409,7 @@ public class ChatEnv {
 	public boolean addLoginusr(User user) {
 		boolean result = false;
 		if (user != null) {
-			user.online();
+			// user.online();
 			if (user.getKefuFlag() > 0) {
 				if (!kefu.contains(user)) {
 					kefu.add(user);

@@ -1,3 +1,7 @@
+if (typeof kfPath == 'undefined') {
+	kfPath = "http://127.0.0.1:8088/mychat/";
+}
+
 /**
  * 加载css文件
  * @param path
@@ -10,24 +14,24 @@ function loadStyle(path) {
 	document.getElementsByTagName("head")[0].appendChild(link);
 }
 
-loadStyle('style/base/plugins/KF/kfmenu.css');
+loadStyle(kfPath + 'style/base/plugins/KF/kfmenu.css');
 var html = "<div style='top: 186px; width: 25px;' class='ct_kfbox' id='ct_kfbox' onmouseover='javascript:show()' onmouseout='javascript:dopar=setTimeout(function(){closeed()},800)'>"
 	+ "<div class='ct_kfhead'>"
-	+ "	<img style='display: none;' src='style/base/plugins/KF/images/qq_11.gif' class='ct_log' id='ct_qqtitlelog' onclick=\"javascript:dolookmenu('xiao')\"/>" 
-	+ "	<img style='display: none;' src='style/base/plugins/KF/images/qq_06.gif' class='ct_xiao' id='ct_qqxiao' onclick=\"javascript:dolookmenu('xiao')\"/> "
-	+ "	<img src='style/base/plugins/KF/images/qq_08.gif' class='ct_close' id='qqclose' onclick=\"javascript:dolookmenu('close')\"/>"
+	+ "	<img style='display: none;' src='"+kfPath+"style/base/plugins/KF/images/qq_11.gif' class='ct_log' id='ct_qqtitlelog' onclick=\"javascript:dolookmenu('xiao')\"/>" 
+	+ "	<img style='display: none;' src='"+kfPath+"style/base/plugins/KF/images/qq_06.gif' class='ct_xiao' id='ct_qqxiao' onclick=\"javascript:dolookmenu('xiao')\"/> "
+	+ "	<img src='"+kfPath+"style/base/plugins/KF/images/qq_08.gif' class='ct_close' id='qqclose' onclick=\"javascript:dolookmenu('close')\"/>"
 	+ "</div>"
 	+ "<div style='height: 200px;' class='ct_kfmain' id='ct_kfmain'>"
 	+ "	<div style='display: none;' class='ct_kfcontent' id='ct_kfcontent'>"
 	+ "		<div class='ct_kfitemtitle' onclick='showandhide(0)'>"
-	+ "			<img src='style/base/plugins/KF/images/boot.jpg' style='margin: 5px auto'/>&nbsp;&nbsp;&nbsp;&nbsp;售前咨询"
+	+ "			<img src='"+kfPath+"style/base/plugins/KF/images/boot.jpg' style='margin: 5px auto'/>&nbsp;&nbsp;&nbsp;&nbsp;售前咨询"
 	+ "		</div>"
 	+ "		<div class='ct_kfitem'>"
 	+ "			<ul id='ct_k0'>"
 	+ "			</ul>"
 	+ "		</div>"
 	+ "		<div class='ct_kfitemtitle' onclick='showandhide(1)'>"
-	+ "			<img src='style/base/plugins/KF/images/boot.jpg' style='margin: 5px auto'/>&nbsp;&nbsp;&nbsp;&nbsp;客户服务"
+	+ "			<img src='"+kfPath+"style/base/plugins/KF/images/boot.jpg' style='margin: 5px auto'/>&nbsp;&nbsp;&nbsp;&nbsp;客户服务"
 	+ "		</div>"
 	+ "		<div class='ct_kfitem'>"
 	+ "			<ul id='ct_k1'>"
@@ -35,14 +39,14 @@ var html = "<div style='top: 186px; width: 25px;' class='ct_kfbox' id='ct_kfbox'
 	+ "		</div>"
 	+ "	</div>"
 	+ "	<div style='height: 310px;' id='ct_kfmenu' class='ct_kfmenu' onclick='javascript:show()'>"
-	+ "		<img src='style/base/plugins/KF/images/menu_on.gif' id='ct_kfmenuimg' onclick=\"javascript:dolookmenu('xiao')\" border='0'/>"
+	+ "		<img src='"+kfPath+"style/base/plugins/KF/images/menu_on.gif' id='ct_kfmenuimg' onclick=\"javascript:dolookmenu('xiao')\" border='0'/>"
 	+ "	</div>"
 	+ "	<div class='ct_kf53button'>"
-	+ "		<a href='' target='_blank'><img src='style/base/plugins/KF/images/qq2.gif' border='0'/></a>"
+	+ "		<a href='' target='_blank'><img src='"+kfPath+"style/base/plugins/KF/images/qq2.gif' border='0'/></a>"
 	+ "	</div>"
 	+ "</div>"
 	+ "<div class='ct_kffoot'>"
-	+ "	<img src='style/base/plugins/KF/images/index_bot2_04.gif' border='0'/>"
+	+ "	<img src='"+kfPath+"style/base/plugins/KF/images/index_bot2_04.gif' border='0'/>"
 	+ "</div>"
 	+ "</div>";
 
@@ -106,26 +110,26 @@ function getKefu() {
 			if (user.kefuFlag == 1) {
 				html1 += "<li title='发起聊天' class='QQonline'>&nbsp;&nbsp;"
 					+ "	<a target='_blank' href=''>"
-					+ "		<img src='" + user.minheader + "'/>"
+					+ "		<img src='" + kfPath + user.minheader + "'/>"
 					+ "	</a>&nbsp;&nbsp;"
 					+ "	<a target='_blank'" 
 					+ (user.status == 1 ? " class='ct_red'" : "")
-					+ " href='action?method=launch&username=" + user.username + "'>" + user.nickname + "</a>"
+					+ " href='"+kfPath+"action?method=launch&username=" + user.username + "'>" + user.nickname + "</a>"
 					+ "</li>";
 			} else if (user.kefuFlag == 2) {
 				html0 += "<li title='发起聊天' class='QQonline'>&nbsp;&nbsp;"
 					+ "	<a target='_blank' href=''>"
-					+ "		<img src='" + user.minheader + "'/>"
+					+ "		<img src='" + kfPath + user.minheader + "'/>"
 					+ "	</a>&nbsp;&nbsp;"
 					+ "	<a target='_blank'" 
 					+ (user.status == 1 ? " class='ct_red'" : "")
-					+ " href='action?method=launch&username=" + user.username + "'>" + user.nickname + "</a>"
+					+ " href='"+kfPath+"action?method=launch&username=" + user.username + "'>" + user.nickname + "</a>"
 					+ "</li>";
 			}
 		}
 		document.getElementById("ct_k1").innerHTML = html1;
 		document.getElementById("ct_k0").innerHTML = html0;
-	}, "action?method=kefu", true);
+	}, kfPath + "action?method=kefu", true);
 }
 
 var tips;
@@ -187,7 +191,7 @@ function show() {
 	clearInterval(proyc);
 	clearTimeout(dopar);
 
-	objmenuimg.src = "style/base/plugins/KF/images/menu_off.gif";
+	objmenuimg.src = kfPath + "style/base/plugins/KF/images/menu_off.gif";
 	prox = setInterval(function() {
 		openx(objbox, 150)
 	}, 10);
@@ -264,7 +268,7 @@ function closex(o) {
 			ismovetop = true;
 		}
 		clearInterval(proxc);
-		objmenuimg.src = "style/base/plugins/KF/images/menu_on.gif";
+		objmenuimg.src = kfPath + "style/base/plugins/KF/images/menu_on.gif";
 		iscolse = false;
 		return;
 	}

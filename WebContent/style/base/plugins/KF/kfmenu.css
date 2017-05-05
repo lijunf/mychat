@@ -17,6 +17,8 @@ DIV {
 	COLOR: #666; 
 	FONT-SIZE: 12px; 
 	line-height: 18px; 
+    -webkit-box-sizing: content-box!important;
+    box-sizing: content-box!important;
 }
 
 .ct_kfbox A { 
